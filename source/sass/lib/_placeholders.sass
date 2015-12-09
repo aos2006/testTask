@@ -1,0 +1,20 @@
+%dib-mid
+	display: inline-block
+	vertical-align: middle
+%helvetica
+	font-family: "Helvetica Neue", sans-serif
+%w285
+	width: 285px
+%page-footer-txt
+	color: #333
+	@extend %helvetica
+	font-size: 12px
+	font-weight: 500
+	line-height: 1.33
+%before-mid
+	&:before
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		height: 100%
+		width: 0

@@ -1,0 +1,95 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-basket {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -55px;
+  width: 23px;
+  height: 25px;
+}
+.icon-fb-likes {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -236px;
+  width: 127px;
+  height: 35px;
+}
+.icon-fb {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -138px;
+  width: 109px;
+  height: 33px;
+}
+.icon-inst {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -186px;
+  width: 110px;
+  height: 35px;
+}
+.icon-news-item-2 {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -624px;
+  width: 100px;
+  height: 100px;
+}
+.icon-search-magnifer {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -21px;
+  width: 18px;
+  height: 19px;
+}
+.icon-slider-arrow--big-r {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -739px;
+  width: 59px;
+  height: 134px;
+}
+.icon-slider-arrow--big {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -888px;
+  width: 59px;
+  height: 134px;
+}
+.icon-slider-items-arrow-l {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -415px;
+  width: 46px;
+  height: 79px;
+}
+.icon-slider-items-arrow-r {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -509px;
+  width: 46px;
+  height: 100px;
+}
+.icon-tells-drop-arrow {
+  background-image: url(../img/sprites.png);
+  background-position: 0px 0px;
+  width: 12px;
+  height: 6px;
+}
+.icon-vk-likes {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -286px;
+  width: 110px;
+  height: 36px;
+}
+.icon-vk {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -95px;
+  width: 108px;
+  height: 28px;
+}
+.icon-youtube {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -337px;
+  width: 192px;
+  height: 63px;
+}
