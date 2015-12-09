@@ -39,7 +39,7 @@ body
 	&--categories &__item
 		margin-right: 68px
 	&--features
-		padding: 18px 0
+		padding: 15px 0
 		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08)
 	&--features &__list
 		width: 100%
@@ -90,7 +90,7 @@ body
 
 /*{start header-panel}*/
 .header-panel
-	padding: 20px 0
+	padding: 18px 0
 	font-size: 0
 	background-color: #4c4b4c
 	&__logo
@@ -205,6 +205,8 @@ body
 
 /*{start slider}*/
 .slider
+	padding-top: 18px
+	padding-bottom: 5px
 	overflow: hidden
 	&__content
 		position: relative
@@ -218,7 +220,7 @@ body
 	&__i
 		position: absolute
 		right: 0
-		top: 74px
+		top: 73px - 18px
 		width: 528px
 	&__title
 		margin-bottom: 20px
@@ -229,7 +231,7 @@ body
 		line-height: 1.08
 		white-space: pre-line
 	&__subtitle
-		margin-bottom: 43px
+		margin-bottom: 46px
 		color: #333
 		@extend %helvetica
 		font-size: 19px
@@ -237,7 +239,7 @@ body
 		line-height: 1.21
 	&__link
 		display: inline-block
-		padding: 11px 39px
+		padding: 11px 40px
 		color: #2567b3
 		@extend %helvetica
 		font-size: 14px
@@ -254,13 +256,13 @@ body
 	margin-top: -67px
 	cursor: pointer
 .slider .slick-prev
-	left: 12px
+	left: -12px
 	background-image: url(../img/sprites.png)
 	background-position: 0px -888px
 .slider .slick-next
 	background-image: url(../img/sprites.png)
 	background-position: 0px -739px
-	right: 12px
+	right: -12px
 /*{end slider}*/
 
 /*{start sort-line}*/
@@ -271,9 +273,9 @@ body
 		@extend %dib-mid
 		color: #333
 		@extend %helvetica
-		font-size: 22px
+		font-size: 16px
 		font-weight: 400
-		line-height: 1.36
+		line-height: 1.38
 		margin-right: 76px
 		cursor: pointer
 		&:last-child
@@ -286,57 +288,58 @@ body
 	&__arrow
 		position: absolute
 		z-index: 20
-		top: 50%
-		margin-top: -40px
+		top: 46px
 		width: 46px
 		height: 79px
 		cursor: pointer
 		&--left
-			left: 0
+			left: -12px
 			background-image: url(../img/sprites.png)
 			background-position: 0px -415px
 		&--right
-			right: 0
+			right: -12px
 			background-image: url(../img/sprites.png)
 			background-position: 0px -509px
 	&__list
 		@extend %dib-mid
-		width: 1170px
+		width: 1140px
 		overflow: hidden
 		text-align: center
 		font-size: 0
 	&__i
-		position: relative
-		z-index: 100
 		@extend %dib-mid
-		margin-right: 135px
-		text-align: left
-		&:first-child
-			margin-left: 62px
+		text-align: center
 		&:last-child
 			margin-right: 0
 	&__img
 		display: block
 		width: 150px
 		height: 150px
-		margin-bottom: 35px
+		margin-bottom: 42px
+		margin-left: auto
+		margin-right: auto
 	&__descr
+		margin-left: 62px
 		margin-bottom: 11px
 		@extend %helvetica
 		font-size: 13px
 		font-weight: 400
 		line-height: 1.38
+		text-align: left
 	&__price
+		margin-left: 62px
 		color: #000
 		@extend %helvetica
 		font-weight: 400
 		font-size: 20px
+		text-align: left
 		&--small-size
 			font-size: 14px
 
 .items-slider .slick-dots button
 	display: none
 .items-slider .slick-dots
+	margin-top: 21px
 	text-align: center
 	padding: 7px 0
 	font-size: 0
@@ -348,6 +351,8 @@ body
 	background-color: #9f9f9f
 	border-radius: 50%
 	cursor: pointer
+	&:first-child
+		margin-left: 13px
 .items-slider .slick-dots .slick-active
 	border: 1px solid #008cea
 	background-color: transparent
@@ -377,6 +382,7 @@ body
 
 /*{start news-list}*/
 .news-list
+	min-height: 210px
 	font-size: 0
 	&__item
 		display: inline-block
@@ -389,6 +395,7 @@ body
 		width: 100px
 		height: 100px
 	&__title
+		margin-bottom: 5px
 		color: #111
 		@extend %helvetica
 		font-size: 14px
@@ -549,6 +556,7 @@ body
 
 /*{start info-txt}*/
 .info-txt
+	min-height: 100px
 	padding: 15px 0
 	color: #777
 	@extend %helvetica
@@ -559,8 +567,8 @@ body
 
 /*{start page-footer}*/
 .page-footer
-	padding-top: 21px
-	padding-bottom: 21px
+	padding-top: 25px
+	padding-bottom: 25px
 	background-color: #f7fafa
 	font-size: 0
 	&__info
