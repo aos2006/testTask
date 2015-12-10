@@ -3,6 +3,9 @@ body
 	margin: auto
 	font-family: "Arial", "Helvetica", sans-serif
 
++font("Avenir Next",AvenirNextCyrMedium)
++font("Avenir Next",AvenirNextCyrRegular)
+
 .page
 	&__slider
 		border-bottom: 1px dashed #ccc
@@ -12,6 +15,8 @@ body
 		margin-bottom: 41px
 	&__news
 		margin-bottom: 43px
+	&__social
+		background-color: #f7fafa
 .l-container
 	width: 1140px
 	margin: auto
@@ -33,6 +38,7 @@ body
 		font-size: 13px
 		font-weight: 400
 		line-height: 1.38
+		@extend %avenir-next
 	&--categories &__list
 		margin-right: 0
 		width: 100%
@@ -51,7 +57,7 @@ body
 		display: block
 		padding: 9px 23px
 		color: #000
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 14px
 		font-weight: 400
 		line-height: 1.36
@@ -81,7 +87,7 @@ body
 		margin-right: 23px
 	&__link
 		color: #fff
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 12px
 		font-weight: 500
 		line-height: 1.33
@@ -101,7 +107,7 @@ body
 		margin-right: 74px
 	&__tells
 		@extend %dib-mid
-		margin-right: 96px
+		margin-right: 89px
 	&__place
 		@extend %dib-mid
 		margin-right: 101px
@@ -113,7 +119,7 @@ body
 .logo
 	&__link
 		color: #fff
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 23px
 		font-weight: 400
 		line-height: 1.35
@@ -133,7 +139,7 @@ body
 		font-size: 12px
 		font-weight: 500
 		line-height: 1.33
-		@extend %helvetica
+		@extend %avenir-next
 		background-color: transparent
 	&__icon
 		position: absolute
@@ -155,7 +161,7 @@ body
 	&__link
 		@extend %dib-mid
 		color: #fff
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 18px
 		font-weight: 500
 		line-height: 1.39
@@ -176,7 +182,7 @@ body
 /*{start place}*/
 .place
 	color: #fff
-	@extend %helvetica
+	@extend %avenir-next
 	font-size: 12px
 	font-weight: 500
 	line-height: 1.33
@@ -197,7 +203,7 @@ body
 	&__txt
 		@extend %dib-mid
 		color: #fff
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 14px
 		font-weight: 500
 		line-height: 1.36
@@ -272,12 +278,14 @@ body
 	&__item
 		@extend %dib-mid
 		color: #333
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 16px
 		font-weight: 400
 		line-height: 1.38
-		margin-right: 76px
+		margin-right: 81px
 		cursor: pointer
+		&:first-child
+			font-size: 22px
 		&:last-child
 			margin-right: 0
 /*{end sort-line}*/
@@ -315,13 +323,13 @@ body
 		display: block
 		width: 150px
 		height: 150px
-		margin-bottom: 42px
+		margin-bottom: 36px
 		margin-left: auto
 		margin-right: auto
 	&__descr
 		margin-left: 62px
 		margin-bottom: 11px
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 13px
 		font-weight: 400
 		line-height: 1.38
@@ -329,7 +337,7 @@ body
 	&__price
 		margin-left: 62px
 		color: #000
-		@extend %helvetica
+		@extend %avenir-next
 		font-weight: 400
 		font-size: 20px
 		text-align: left
@@ -339,7 +347,7 @@ body
 .items-slider .slick-dots button
 	display: none
 .items-slider .slick-dots
-	margin-top: 21px
+	margin-top: 16px
 	text-align: center
 	padding: 7px 0
 	font-size: 0
@@ -368,13 +376,14 @@ body
 		@extend %dib-mid
 		margin-right: 11px
 		color: #333
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 22px
 		font-weight: 400
 		line-height: 1.36
 	&__link
 		@extend %dib-mid
-		@extend %helvetica
+		margin-left: 11px
+		@extend %avenir-next
 		font-size: 12px
 		font-weight: 400
 		line-height: 1.33
@@ -397,7 +406,7 @@ body
 	&__title
 		margin-bottom: 5px
 		color: #111
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 14px
 		font-weight: 500
 		line-height: 1.36
@@ -405,13 +414,13 @@ body
 	&__txt
 		margin-bottom: 12px
 		color: #333
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 12px
 		font-weight: 400
 		line-height: 1.33
 	&__date
 		color: #777
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 12px
 		font-weight: 500
 		line-height: 1.33
@@ -422,13 +431,13 @@ body
 .social
 	padding-top: 26px
 	padding-bottom: 49px
-	background-color: #f7fafa
-	text-align: center
+	text-align: left
 	font-size: 0
+	+clr
 	&__title
 		margin-bottom: 25px
 		color: #333
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 22px
 		font-weight: 400
 		line-height: 1.36
@@ -439,11 +448,13 @@ body
 /*{start social-inst}*/
 .social-inst
 	@extend %dib-mid
-	padding-top: 16px
+	padding-top: 20px
 	width: 270px
 	height: 80px
 	margin-right: 15px
+	text-align: center
 	background-color: #fff
+	border: 1px solid #f0ebf2
 	&__header
 		margin-bottom: 5px
 		font-size: 0
@@ -458,7 +469,7 @@ body
 		@extend %dib-mid
 		padding: 7px 13px
 		color: #2d6599
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 12px
 		font-weight: 400
 		line-height: 1.33
@@ -471,7 +482,7 @@ body
 			margin-left: 10px
 		&:last-child
 			margin-right: 0
-		@extend %helvetica
+		@extend %avenir-next
 		&--quantity
 			color: #111
 			font-size: 13px
@@ -492,6 +503,7 @@ body
 	margin-right: 15px
 	background-color: #3b559a
 	@extend %before-mid
+	text-align: center
 	&__link
 		@extend %dib-mid
 		margin-right: 14px
@@ -519,6 +531,7 @@ body
 	margin-right: 15px
 	background-color: #4f7094
 	@extend %before-mid
+	text-align: center
 	&__link
 		@extend %dib-mid
 		margin-right: 14px
@@ -545,8 +558,10 @@ body
 	height: 80px
 	background-color: #fff
 	@extend %before-mid
+	text-align: left
 	&__link
 		@extend %dib-mid
+		margin-left: 20px
 		background-image: url(../img/sprites.png)
 		background-position: 0px -337px
 		width: 192px
@@ -559,7 +574,7 @@ body
 	min-height: 100px
 	padding: 15px 0
 	color: #777
-	@extend %helvetica
+	@extend %avenir-next
 	font-size: 12px
 	font-weight: 500
 	line-height: 1.33
@@ -577,13 +592,13 @@ body
 	&__title
 		margin-bottom: 8px
 		color: #111
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 14px
 		font-weight: 500
 		line-height: 1.36
 	&__copyright
 		color: #777
-		@extend %helvetica
+		@extend %avenir-next
 		font-size: 12px
 		font-weight: 500
 		line-height: 1.33

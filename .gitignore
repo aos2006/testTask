@@ -2,3 +2,4 @@ node_modules
 .codekit-cache
 min
 config.codekit
+.idea
